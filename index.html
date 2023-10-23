@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <input type="text" placeholder="Name of product" id="product">
+    <input type="text" placeholder="Description" id="descript">
+    <input type="text" placeholder="price" id="price">
+    <button onclick="display()">Submit</button>
+    <div id="show"></div>
+
+
+    <script>
+        var production= [];
+
+        function display() {
+            var Myproduct = document.getElementById("product").value;
+            var Mydes = document.getElementById("descript").value;
+            var Myprice = document.getElementById("price").value;
+
+            var allproduct = { Myproduct, Mydes, Myprice };
+            
+            if (Myproduct||Mydes||Myprice =="") {
+                production.push(allproduct)
+                product.value || descript.value || price.value == ""
+                console.log(allproduct);
+                
+                    show.innerHTML = ""
+                for (i = 0; i < production.length; i++) {
+                var allproduct = production[i];
+                show.innerHTML += ``
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
